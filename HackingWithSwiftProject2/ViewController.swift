@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var score = 0
     var correctAnswer = 0
     var countries = [String]()
+    var questionsAsked = 0
     
     
     override func viewDidLoad() {
@@ -41,27 +42,27 @@ class ViewController: UIViewController {
         
         askQuestion()
         
-            
-            
-            
-        }
+        
+        
+        
+    }
     
     // Function for asking questions
     func askQuestion(action: UIAlertAction! = nil) {
-    countries.shuffle()
-    // load the image
-    button1.setImage(UIImage(named: countries[0]), for: .normal)
-    button2.setImage(UIImage(named: countries[1]), for: .normal)
-    button3.setImage(UIImage(named: countries[2]), for: .normal)
-    
-    correctAnswer = Int.random(in: 0...2)
-    // Uppercase
-    title = countries[correctAnswer].uppercased()
+        countries.shuffle()
+        // load the image
+        button1.setImage(UIImage(named: countries[0]), for: .normal)
+        button2.setImage(UIImage(named: countries[1]), for: .normal)
+        button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-    
+        correctAnswer = Int.random(in: 0...2)
+        // Uppercase + score
+        title = "\(countries[correctAnswer].uppercased()) Score: \(score)"
         
-       
-       
+        
+        
+        
+        
     }
     
     // When it's not specified, parameter has a value of nil
@@ -69,6 +70,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: UIButton) {
         // Correction
         var title: String
+        questionsAsked += 1
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
@@ -77,12 +79,48 @@ class ViewController: UIViewController {
             score -= 1
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score)" , preferredStyle: .alert)
-               
-               ac.addAction(UIAlertAction(title: "Continue", style: .default,
-               handler: askQuestion))
-
-               present(ac, animated: true)
+        
+        if questionsAsked == 10 {
+            
+            if title == "Wrong"{
+                
+                let ac = UIAlertController(title: "\(title) That is \(countries[sender.tag])", message: "You have answered 10 questions" , preferredStyle: .alert)
+                
+                ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+                
+                present(ac, animated: true)
+                
+            } else {
+                
+                let ac = UIAlertController(title: title, message: "You have answered 10 questions" , preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Continue", style: .default,handler: askQuestion))
+                present(ac, animated: true)
+                
+            }
+            
+            
+        } else {
+            
+            
+            if title == "Wrong"{
+                
+                let ac = UIAlertController(title: title, message: "This is the flag of \(countries[sender.tag])" , preferredStyle: .alert)
+                
+                ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+                
+                present(ac, animated: true)
+                
+            } else {
+                
+                let ac = UIAlertController(title: title, message: "Your score is \(score)" , preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Continue", style: .default,handler: askQuestion))
+                present(ac, animated: true)
+                
+            }
+            
+        }
+        
+        
         
     }
     
