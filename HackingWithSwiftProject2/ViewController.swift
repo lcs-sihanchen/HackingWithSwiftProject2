@@ -43,8 +43,8 @@ class ViewController: UIViewController {
         askQuestion()
         
         navigationItem.rightBarButtonItem =
-            UIBarButtonItem(barButtonSystemItem: .action, target: self,
-                            action: #selector(shareTapped))
+            UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self,
+                            action: #selector(scoreKeep))
         
         
     }
@@ -67,11 +67,12 @@ class ViewController: UIViewController {
         
     }
     
+    
     // When it's not specified, parameter has a value of nil
     
-    @objc func shareTapped() {
-        let text = "Rate my app on App Store!"
-        let UIAvc = UIActivityViewController(activityItems: [text], applicationActivities: [])
+    @objc func scoreKeep() {
+        let scoreText = "Your score is \(score)."
+        let UIAvc = UIActivityViewController(activityItems: [scoreText], applicationActivities: [])
         UIAvc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         
         present(UIAvc, animated: true)
