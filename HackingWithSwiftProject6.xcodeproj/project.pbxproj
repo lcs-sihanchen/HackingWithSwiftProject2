@@ -40,7 +40,7 @@
 		9C780B99241EE6DA006671FD = {
 			isa = PBXGroup;
 			children = (
-				9C780BA4241EE6DA006671FD /* HackingWithSwiftProject6 */,
+				9C780BA4241EE6DA006671FD /* HackingWithSwiftProject2 */,
 				9C780BA3241EE6DA006671FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C780BA4241EE6DA006671FD /* HackingWithSwiftProject6 */ = {
+		9C780BA4241EE6DA006671FD /* HackingWithSwiftProject2 */ = {
 			isa = PBXGroup;
 			children = (
 				9C780BA5241EE6DA006671FD /* AppDelegate.swift */,
@@ -64,7 +64,7 @@
 				9C780BB0241EE6DD006671FD /* LaunchScreen.storyboard */,
 				9C780BB3241EE6DD006671FD /* Info.plist */,
 			);
-			path = HackingWithSwiftProject6;
+			path = HackingWithSwiftProject2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
