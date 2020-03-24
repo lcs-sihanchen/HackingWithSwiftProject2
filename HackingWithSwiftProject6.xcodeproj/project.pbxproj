@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C780BA2241EE6DA006671FD /* HackingWithSwiftProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackingWithSwiftProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C780BA2241EE6DA006671FD /* HackingWithSwiftProject6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackingWithSwiftProject6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C780BA5241EE6DA006671FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C780BA7241EE6DA006671FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9C780BA9241EE6DA006671FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		9C780B99241EE6DA006671FD = {
 			isa = PBXGroup;
 			children = (
-				9C780BA4241EE6DA006671FD /* HackingWithSwiftProject2 */,
+				9C780BA4241EE6DA006671FD /* HackingWithSwiftProject6 */,
 				9C780BA3241EE6DA006671FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		9C780BA3241EE6DA006671FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C780BA2241EE6DA006671FD /* HackingWithSwiftProject2.app */,
+				9C780BA2241EE6DA006671FD /* HackingWithSwiftProject6.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C780BA4241EE6DA006671FD /* HackingWithSwiftProject2 */ = {
+		9C780BA4241EE6DA006671FD /* HackingWithSwiftProject6 */ = {
 			isa = PBXGroup;
 			children = (
 				9C780BA5241EE6DA006671FD /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				9C780BB0241EE6DD006671FD /* LaunchScreen.storyboard */,
 				9C780BB3241EE6DD006671FD /* Info.plist */,
 			);
-			path = HackingWithSwiftProject2;
+			path = HackingWithSwiftProject6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C780BA1241EE6DA006671FD /* HackingWithSwiftProject2 */ = {
+		9C780BA1241EE6DA006671FD /* HackingWithSwiftProject6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C780BB6241EE6DD006671FD /* Build configuration list for PBXNativeTarget "HackingWithSwiftProject2" */;
+			buildConfigurationList = 9C780BB6241EE6DD006671FD /* Build configuration list for PBXNativeTarget "HackingWithSwiftProject6" */;
 			buildPhases = (
 				9C780B9E241EE6DA006671FD /* Sources */,
 				9C780B9F241EE6DA006671FD /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = HackingWithSwiftProject2;
+			name = HackingWithSwiftProject6;
 			productName = HackingWithSwiftProject2;
-			productReference = 9C780BA2241EE6DA006671FD /* HackingWithSwiftProject2.app */;
+			productReference = 9C780BA2241EE6DA006671FD /* HackingWithSwiftProject6.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C780B9D241EE6DA006671FD /* Build configuration list for PBXProject "HackingWithSwiftProject2" */;
+			buildConfigurationList = 9C780B9D241EE6DA006671FD /* Build configuration list for PBXProject "HackingWithSwiftProject6" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C780BA1241EE6DA006671FD /* HackingWithSwiftProject2 */,
+				9C780BA1241EE6DA006671FD /* HackingWithSwiftProject6 */,
 			);
 		};
 /* End PBXProject section */
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C780B9D241EE6DA006671FD /* Build configuration list for PBXProject "HackingWithSwiftProject2" */ = {
+		9C780B9D241EE6DA006671FD /* Build configuration list for PBXProject "HackingWithSwiftProject6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C780BB4241EE6DD006671FD /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C780BB6241EE6DD006671FD /* Build configuration list for PBXNativeTarget "HackingWithSwiftProject2" */ = {
+		9C780BB6241EE6DD006671FD /* Build configuration list for PBXNativeTarget "HackingWithSwiftProject6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C780BB7241EE6DD006671FD /* Debug */,
