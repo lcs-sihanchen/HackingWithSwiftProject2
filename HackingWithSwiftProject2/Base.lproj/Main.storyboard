@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackingWithSwiftProject2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackingWithSwiftProject6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,6 +24,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-a6-CJr">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fZh-a6-CJr" secondAttribute="height" multiplier="2:1" id="exR-Cs-hIc"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJf-tE-0SJ"/>
@@ -31,6 +34,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBa-my-vsm">
                                 <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NBa-my-vsm" secondAttribute="height" multiplier="2:1" id="MLe-nt-DXx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -41,11 +47,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0a7-Kq-qqY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CDa-GW-HDr"/>
+                            <constraint firstItem="NBa-my-vsm" firstAttribute="height" secondItem="fZh-a6-CJr" secondAttribute="height" id="Gd3-oG-hux"/>
+                            <constraint firstItem="fZh-a6-CJr" firstAttribute="height" secondItem="0a7-Kq-qqY" secondAttribute="height" id="QOq-Q9-zyj"/>
                             <constraint firstItem="NBa-my-vsm" firstAttribute="top" secondItem="fZh-a6-CJr" secondAttribute="bottom" constant="30" id="VbI-wc-mI1"/>
                             <constraint firstItem="fZh-a6-CJr" firstAttribute="centerX" secondItem="0a7-Kq-qqY" secondAttribute="centerX" id="bzH-Y3-f2S"/>
                             <constraint firstItem="NBa-my-vsm" firstAttribute="centerX" secondItem="fZh-a6-CJr" secondAttribute="centerX" id="hhC-Vk-maT"/>
                             <constraint firstItem="fZh-a6-CJr" firstAttribute="top" secondItem="0a7-Kq-qqY" secondAttribute="bottom" constant="30" id="hsc-5v-RLM"/>
                             <constraint firstItem="0a7-Kq-qqY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="qPc-4s-7iI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NBa-my-vsm" secondAttribute="bottom" constant="20" id="tSn-5E-9b8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
